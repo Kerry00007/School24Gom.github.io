@@ -1,0 +1,180 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Хедер */
+header {
+    background-color: #004080;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+/* Основной контент */
+main {
+    padding: 30px 0;
+}
+
+/* Секции */
+.section {
+    display: none; /* скрываем все секции по умолчанию */
+}
+
+.section.active {
+    display: block; /* показываем активную секцию */
+}
+
+/* Изображения */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Учителя */
+.teachers-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.teacher-card {
+    background-color:#fff ;
+   border-radius :8px ;
+   box-shadow :0 2px 5px rgba(0 ,0 ,0 ,0.1) ;
+   padding :15px ;
+   flex :1 ;
+   min-width :250px ;
+   text-align :center ;
+}
+
+.teacher-card img {
+   border-radius :50% ;
+   width :120px ;
+   height :120px ;
+   object-fit :cover ;
+   margin-bottom :10px ;
+}
+
+/* Новости */
+.news-item {
+   background-color:#fff ;
+   padding :15px ;
+   margin-bottom :15px ;
+   border-radius :8px ;
+   box-shadow :0 2px 5px rgba(0 ,0 ,0 ,0.1) ;
+}
+
+.news-item time {
+   font-size :0.9em ;
+   color :#666 ;
+}
+
+/* Контакты */
+address {
+   font-style :normal ;
+   margin-bottom :20px ;
+}
+
+form label {
+   display:block ;
+   margin-top :10px ;
+}
+
+form input,
+form textarea {
+   width :100% ;
+   padding :8px ;
+   margin-top :5px ;
+   border-radius :4px ;
+   border :1px solid #ccc ;
+}
+
+form button {
+   margin-top :15px ;
+   background-color:#004080 ;
+   color:white ;
+   border:none ;
+   padding :10px 20px ;
+   cursor:pointer ;
+   border-radius :4px ;
+}
+
+form button:hover {
+background-color:#003060 ; 
+}
+
+/* Сообщение формы */
+#form-message{
+margin-top :10px ; 
+font-weight:bold ; 
+color:#008000 ; 
+}
+
+/* Подвал */
+footer{
+text-align:center ; 
+padding :15px 0 ; 
+background-color:#004080 ; 
+color:white ; 
+margin-top:auto ; 
+position:absolute ; 
+width:100% ; 
+bottom:0 ; 
+left:0 ; 
+}
+
+/* Адаптивность */
+
+@media(max-width:768px){
+nav ul{
+flex-direction :column ; 
+align-items:center ; 
+}
+nav ul li{
+margin-bottom :10px ; 
+}
+.teachers-list{
+flex-direction :column ; 
+}
+}
